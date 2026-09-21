@@ -1,17 +1,12 @@
-# Java Docker Practice App
+# Python Flask - Docker Practice Application
 
-A minimal Spring Boot REST API running on port 8080. 
+A minimal Flask web application running on port 5000. This project is designed for practicing Docker containerization.
 
 ## Directory Structure
-Ensure your files look exactly like this before you start:
+Ensure your project files are organized exactly like this before you start:
 ```text
 .
-├── pom.xml
+├── app.py
+├── requirements.txt
 ├── README.md
-└── src
-    └── main
-        └── java
-            └── com
-                └── example
-                    └── demo
-                        └── DemoApplication.java
+└── Dockerfile 
