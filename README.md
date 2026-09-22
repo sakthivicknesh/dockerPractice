@@ -1,17 +1,28 @@
-# Java Docker Practice App
+# Employee Service API
 
-A minimal Spring Boot REST API running on port 8080. 
+A production-ready Spring Boot REST API demonstrating the Controller-Service-Repository architecture. It includes data persistence (H2 in-memory database), input validation, global exception handling, and Actuator endpoints for health monitoring.
 
 ## Directory Structure
-Ensure your files look exactly like this before you start:
 ```text
 .
 ├── pom.xml
 ├── README.md
 └── src
     └── main
+        ├── resources
+        │   └── application.yml
         └── java
             └── com
                 └── example
-                    └── demo
-                        └── DemoApplication.java
+                    └── api
+                        ├── Application.java
+                        ├── config
+                        │   └── GlobalExceptionHandler.java
+                        ├── controller
+                        │   └── EmployeeController.java
+                        ├── entity
+                        │   └── Employee.java
+                        ├── repository
+                        │   └── EmployeeRepository.java
+                        └── service
+                            └── EmployeeService.java
